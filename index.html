@@ -29,6 +29,11 @@
             <div class="header__logo">
                 <img class="header__logo-image" src="./assets/images/seven-keys.png" alt="Seven Keys">
             </div> 
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="header__nav">
                 <a class="header__nav-item" href="#about">Хто ми?</a>
                 <a class="header__nav-item" href="#services">Послуги</a>
@@ -46,19 +51,25 @@
                 <ul>
                     <li id="0" class="slide active">
                         <img src="./assets/images/slider1.png" alt="slider1">
+                        <div class="slide-text-container">
                         <span class="slide0-text1">ШВИДКЕ ВИГОТОВЛЕННЯ </span>
                         <span class="slide0-text2">АВТОМОБІЛЬНИХ <br> КЛЮЧІВ</span>
-                        <button class="slide0-button slider-button">Замовити</button>
+                    </div>
+                        <button class="slide0-button slider-button request">Замовити</button>
                     </li>
                     <li id="1" class="slide">
                         <img src="./assets/images/slider2.png" alt="slider2">
-                        <span class="slide1-text"><span class="text-red">ВИГОТОВЛЕННЯ ДУБЛІКАТІВ</span> <br> ДЛЯ РІЗНИХ ТИПІВ КЛЮЧІВ</span>
-                        <button class="slide1-button slider-button">Замовити</button>
+                        <div class="slide-text-container">
+                            <span class="slide1-text"><span class="text-red">ВИГОТОВЛЕННЯ ДУБЛІКАТІВ</span> <br> ДЛЯ РІЗНИХ ТИПІВ КЛЮЧІВ</span>
+                        </div>
+                    <button class="slide1-button slider-button request">Замовити</button>
                     </li>
                     <li id="2" class="slide">
                         <img src="./assets/images/slider3.jpg" alt="slider3">
-                        <span class="slide2-text"><span class="text-red">АВАРІЙНЕ ВІДКРИТТЯ</span><br> ДВЕРЕЙ АВТОМОБІЛЯ</span>
-                        <button class="slide2-button slider-button">Замовити</button>
+                        <div class="slide-text-container">
+                            <span class="slide2-text"><span class="text-red">АВАРІЙНЕ ВІДКРИТТЯ</span><br> ДВЕРЕЙ АВТОМОБІЛЯ</span>
+                        </div>
+                        <button class="slide2-button slider-button request">Замовити</button>
                     </li>
                 </ul>
             </section>
@@ -91,7 +102,7 @@
                         </p>
                     </div>
                     
-                    <div class="about__card card-red">
+                    <div class="about__card card-red card-for-order">
                         <div class="about__card-header">
                             <img src="./assets/images/card2.png" alt="card2">
                             <h3 class="card__header">Довіра та відповідальність</h3>
@@ -134,7 +145,7 @@
                         <p class="servie__item-text">
                             Виготовлення дублікатів ключів будь-якої складності
                         </p>
-                        <button class="service__item-button">Замовити</button>
+                        <button class="service__item-button request">Замовити</button>
                     </div>
                     <div class="services__item">
                         <div class="service__item-image">
@@ -143,7 +154,7 @@
                         <p class="servie__item-text">
                             Виготовлення автомобільних ключів
                         </p>
-                        <button class="service__item-button">Замовити</button>
+                        <button class="service__item-button request">Замовити</button>
                     </div>
                     <div class="services__item">
                         <div class="service__item-image">
@@ -152,7 +163,7 @@
                         <p class="servie__item-text">
                             Відновлення авто ключів при повній втраті
                         </p>
-                        <button class="service__item-button">Замовити</button>
+                        <button class="service__item-button request">Замовити</button>
                     </div>
                     <div class="services__item">
                         <div class="service__item-image">
@@ -161,7 +172,7 @@
                         <p class="servie__item-text">
                             Заміна елементів живлення в авто ключах
                         </p>
-                        <button class="service__item-button">Замовити</button>
+                        <button class="service__item-button request">Замовити</button>
                     </div>
                     <div class="services__item">
                         <div class="service__item-image">
@@ -170,7 +181,7 @@
                         <p class="servie__item-text">
                             Ремонт замків запалювання
                         </p>
-                        <button class="service__item-button">Замовити</button>
+                        <button class="service__item-button request">Замовити</button>
                     </div>
                     <div class="services__item">
                         <div class="service__item-image">
@@ -179,7 +190,7 @@
                         <p class="servie__item-text">
                             Аварійне відкриття дверей автомобіля
                         </p>
-                        <button class="service__item-button">Замовити</button>
+                        <button class="service__item-button request">Замовити</button>
                     </div>
                     <div class="services__item">
                         <div class="service__item-image">
@@ -188,7 +199,7 @@
                         <p class="servie__item-text">
                             Ремонт та відновлення автоключів
                         </p>
-                        <button class="service__item-button">Замовити</button>
+                        <button class="service__item-button request">Замовити</button>
                     </div>
                 </div>
             </section>
@@ -231,7 +242,7 @@
                 </div>
                 <div class="contacts__wrapper">
                     <div class="contacts__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164.82364554830102!2d22.30132178158505!3d48.62556947040728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473919b68ae781df%3A0x3cc81f460f3f5406!2z0LLRg9C70LjRhtGPINCk0LXQtNC40L3RhtGPLCAzOSwg0KPQttCz0L7RgNC-0LQsINCX0LDQutCw0YDQv9Cw0YLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgODgwMDA!5e0!3m2!1suk!2sua!4v1693853221915!5m2!1suk!2sua" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="map-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164.82364554830102!2d22.30132178158505!3d48.62556947040728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473919b68ae781df%3A0x3cc81f460f3f5406!2z0LLRg9C70LjRhtGPINCk0LXQtNC40L3RhtGPLCAzOSwg0KPQttCz0L7RgNC-0LQsINCX0LDQutCw0YDQv9Cw0YLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgODgwMDA!5e0!3m2!1suk!2sua!4v1693853221915!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="contacts__items">
                         <div class="contact__item">
@@ -256,6 +267,17 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div class="modal">
+            <div class="modal__box">
+                <button class="modal__close">&#x2715</button>
+                <h2>Для запису звертайтесь по телефону:</h2>
+                <div class="contact__phones-modal">
+                    <a href="tel:+380996057886">+38 (099) 605-78-86</a> 
+                    <a href="tel:+380981308127">+38 (098) 130-81-27</a>
+                    <span>Влад</span>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
