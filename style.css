@@ -170,6 +170,8 @@ list-style-type: none;
     opacity: 0;
     overflow: hidden;
     border-radius: 8px;
+    transition: all ease 1s;
+    left: -100px;
 }
 .slide>img{
     object-fit: cover;
@@ -180,6 +182,7 @@ list-style-type: none;
 }
 .slide.active{
     opacity: 1;
+    left: 0;
 }
 
 .slide0-text1, .slide0-text2, .slide1-text,.slide2-text, .slider-button{
@@ -366,6 +369,22 @@ list-style-type: none;
     background-color: #dd5252;
     color: #ffe8e8;
     cursor: pointer;
+}
+.slider-image{
+    filter: blur(1.5rem);
+    transition: all ease .3s;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+.slider-image.open{
+    filter: none;
+    animation: none;
 }
 .response-header{
     margin-top: 25px;

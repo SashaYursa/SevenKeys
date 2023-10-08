@@ -1,6 +1,19 @@
 const slides = document.querySelectorAll('.slide');
 let activeSlide = 0;
+const intervalAction = () => {
+    return setInterval(()=> {
+        removeActiveSlide(activeSlide);
+        activeSlide++;
+        if(activeSlide > 2){
+            activeSlide = 0 
+        }
+        setActiveSlide(activeSlide)
+    }, 10000);
+}
+let interval = intervalAction();
 document.getElementById('carouselNextButton').addEventListener('click',(e)=>{
+    clearInterval(interval)
+    interval = intervalAction();
     e.preventDefault();
     removeActiveSlide(activeSlide);
     if(activeSlide < slides.length - 1){
@@ -12,8 +25,11 @@ document.getElementById('carouselNextButton').addEventListener('click',(e)=>{
         setActiveSlide(activeSlide);
     }
 })
+
 document.getElementById('carouselPrevButton').addEventListener('click',(e)=>{
     e.preventDefault();
+    clearInterval(interval)
+    interval = intervalAction();
     removeActiveSlide(activeSlide);
     if(activeSlide > 0){
     activeSlide = activeSlide - 1;
@@ -63,4 +79,16 @@ document.querySelector('.modal__close').addEventListener('click', e=>{
     e.stopPropagation();
     document.querySelector('.modal').classList.remove('open');
     document.querySelector('body').classList.remove('block');
+})
+const sliderImages = document.querySelectorAll('.slider-image')
+
+sliderImages.forEach((image, i) => {
+    const newImage = new Image()
+    newImage.src = `./assets/images/slider${i+1}.png`;
+    console.log(newImage)
+    newImage.onload = () => {
+        console.log('im load')
+        image.src = newImage.src;
+        image.classList.add('open');
+    }
 })
