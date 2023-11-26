@@ -1,0 +1,17 @@
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виготовлення та ремонт ключів в Ужгороді | Автоключі, ключі від дверей, відкривання авто</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/seven-keys.png">
+    <meta content="Наша компанія в Ужгороді пропонує послуги з виготовлення та ремонту автомобільних ключів, ключів від дверей та багатьох інших видів ключів. Якість та надійність гарантовані." name="description">
+    <meta content="виготовлення ключів Ужгород, ремонт автоключів, відновлення ключів, ключі від дверей, відкривання авто, автосервіс Ужгород" name="keywords">
+    <meta content="SevenKeys" name="author">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sevenkeys.com.ua/">
+    <meta property="og:title" content="Виготовлення та ремонт ключів в Ужгороді | Автоключі, ключі від дверей, відкривання авто">
+    <meta property="og:description" content="Наша компанія у Ужгороді пропонує послуги з виготовлення та ремонту автомобільних ключів, ключів від дверей та багатьох інших видів ключів. Якість та надійність гарантовані.">
+    <meta property="og:image" content="https://sevenkeys.com.ua/assets/images/seven-keys.png">
+    <meta property="og:url" content="https://sevenkeys.com.ua/">
+    <meta property="og:site_name" content="Sevenkeys">
+    <meta property="og:locale" content="uk_UA">
