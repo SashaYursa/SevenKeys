@@ -51,6 +51,7 @@
             <nav class="header__nav">
                 <a class="header__nav-item" href="#about">Хто ми?</a>
                 <a class="header__nav-item" href="#services">Послуги</a>
+                <a class="header__nav-item" href="#works">Наші роботи</a>
                 <a class="header__nav-item" href="#responses">Відгуки</a>
                 <a class="header__nav-item" href="#contacts">Контакти</a>
             </nav>
@@ -156,79 +157,86 @@
                     <div class="instagram__cards">
                     <div class="instagram__card">
                         <div class="instagram__card-media">
-                            <img class="instagram__card-media-image" src="./assets/media/mediaimg1.jpg"/>
+                            <img class="instagram__card-media-image works-image-item" src="./assets/media/mediaimage1-compressed.jpg"/>
                         </div>
-                        <div class="instagram__card-data">
+                        <a href="https://www.instagram.com/seven_keys_uzh/" class="instagram__card-data">
                             <img class="instagram__card-data-logo" src="./assets/media/instagram-logo.jpg"/>
                             <div class="instagram__card-data-info">
                                 <span class="instagram__card-data-name">seven_keys_uzh</span>
                                 <span class="instagram__card-data-follows">999+ followers</span>
                             </div>
                             <img class="instagram__card-app-logo" src="./assets/images/instagram-light.png">
+                        </a>
+                    </div>
+                    <div class="instagram__card active-card">
+                        <div class="instagram__card-media">
+                            <video id="video1" class="instagram__card-media-image works-video-item" poster="./assets/media/poster1.png" src="./assets/media/media1.mp4">
+                            </video>
+                            <button class="video-play-button">
+                                <img class="video-play-icon" src="./assets/images/play-button.png"/>
+                            </button>
                         </div>
+                        <a href="https://www.instagram.com/seven_keys_uzh/" class="instagram__card-data">
+                            <img class="instagram__card-data-logo" src="./assets/media/instagram-logo.jpg"/>
+                            <div class="instagram__card-data-info">
+                                <span class="instagram__card-data-name">seven_keys_uzh</span>
+                                <span class="instagram__card-data-follows">999+ followers</span>
+                            </div>
+                            <img class="instagram__card-app-logo" src="./assets/images/instagram-light.png">
+                        </a>
                     </div>
                     <div class="instagram__card">
                         <div class="instagram__card-media">
-                            <video class="instagram__card-media-image" controls muted src="/assets/media/media1.mp4"></video>
+                            <img class="instagram__card-media-image works-image-item" src="./assets/media/mediaimage2-compressed.jpg"/>
                         </div>
-                        <div class="instagram__card-data">
+                        <a href="https://www.instagram.com/seven_keys_uzh/" class="instagram__card-data">
                             <img class="instagram__card-data-logo" src="./assets/media/instagram-logo.jpg"/>
                             <div class="instagram__card-data-info">
                                 <span class="instagram__card-data-name">seven_keys_uzh</span>
                                 <span class="instagram__card-data-follows">999+ followers</span>
                             </div>
                             <img class="instagram__card-app-logo" src="./assets/images/instagram-light.png">
-                        </div>
+                        </a>
                     </div>
                     <div class="instagram__card">
                         <div class="instagram__card-media">
-                            <img class="instagram__card-media-image" controls muted src="/assets/media/mediaimg2.jpg"/>
+                            <video id="video2" class="instagram__card-media-image works-video-item" poster="./assets/media/poster2.png" src="./assets/media/media2.mp4"></video>
+                            <button class="video-play-button">
+                                <img class="video-play-icon" src="./assets/images/play-button.png"/>
+                            </button>
                         </div>
-                        <div class="instagram__card-data">
+                        <a href="https://www.instagram.com/seven_keys_uzh/" class="instagram__card-data">
                             <img class="instagram__card-data-logo" src="./assets/media/instagram-logo.jpg"/>
                             <div class="instagram__card-data-info">
                                 <span class="instagram__card-data-name">seven_keys_uzh</span>
                                 <span class="instagram__card-data-follows">999+ followers</span>
                             </div>
                             <img class="instagram__card-app-logo" src="./assets/images/instagram-light.png">
-                        </div>
+                        </a>
                     </div>
                     <div class="instagram__card">
                         <div class="instagram__card-media">
-                            <video class="instagram__card-media-image" controls muted src="/assets/media/media2.mp4"></video>
+                            <img class="instagram__card-media-image works-image-item" src="./assets/media/mediaimage3-compressed.jpg"/>
                         </div>
-                        <div class="instagram__card-data">
+                        <a href="https://www.instagram.com/seven_keys_uzh/" class="instagram__card-data">
                             <img class="instagram__card-data-logo" src="./assets/media/instagram-logo.jpg"/>
                             <div class="instagram__card-data-info">
                                 <span class="instagram__card-data-name">seven_keys_uzh</span>
                                 <span class="instagram__card-data-follows">999+ followers</span>
                             </div>
                             <img class="instagram__card-app-logo" src="./assets/images/instagram-light.png">
-                        </div>
-                    </div>
-                    <div class="instagram__card">
-                        <div class="instagram__card-media">
-                            <img class="instagram__card-media-image" controls muted src="/assets/media/mediaimg3.jpg"/>
-                        </div>
-                        <div class="instagram__card-data">
-                            <img class="instagram__card-data-logo" src="./assets/media/instagram-logo.jpg"/>
-                            <div class="instagram__card-data-info">
-                                <span class="instagram__card-data-name">seven_keys_uzh</span>
-                                <span class="instagram__card-data-follows">999+ followers</span>
-                            </div>
-                            <img class="instagram__card-app-logo" src="./assets/images/instagram-light.png">
-                        </div>
+                        </a>
                     </div>
                 
                     </div>
                 </div>
                 <div class="section__buttons">
-                    <div class="works__big-button works__left-button">
-                        <div class="button-left"></div>
-                    </div>
-                    <div class="works__big-button works__right-button">
+                    <button id="prevWork" class="works__big-button works__left-button">
+                        <div  class="button-left"></div>
+                    </button>
+                    <button id="nextWork" class="works__big-button works__right-button">
                         <div class="button-right"></div>                    
-                    </div>
+                    </button>
                 </div>
             </section>
             <section id="services" class="services">
@@ -311,9 +319,6 @@
                     <div class="section-header_underline"></div>
                 </div>
                 <div class="responses__scroll">
-                    <div class="response__scroll-item">
-                        <a>https://www.instagram.com/p/CwOBUBWIPHn/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==</a>
-                    </div>
                     <div class="response__scroll-item">
                         <img src="./assets/images/response1.png" alt="response1">
                     </div>

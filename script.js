@@ -85,10 +85,57 @@ const sliderImages = document.querySelectorAll('.slider-image')
 sliderImages.forEach((image, i) => {
     const newImage = new Image()
     newImage.src = `./assets/images/slider${i+1}.png`;
-    console.log(newImage)
     newImage.onload = () => {
-        console.log('im load')
         image.src = newImage.src;
         image.classList.add('open');
     }
 })
+
+const workImages = document.querySelectorAll('.works-image-item')
+
+workImages.forEach((image, i) => {
+    const newImage = new Image()
+    newImage.src = `./assets/media/mediaimg${i+1}.jpg`;
+    newImage.onload = () => {
+        image.src = newImage.src;
+        image.classList.add('open');
+    }
+})
+
+//instagram posts
+
+document.getElementById('prevWork').addEventListener('click' , () => {
+    const activeCard = document.querySelector('.active-card');
+    const prevCard = activeCard.previousElementSibling;
+    const nextCard = activeCard.nextElementSibling;
+    activeCard.classList.add('disable')
+    nextCard.classList.add('disable')
+})
+document.getElementById('nextWork').addEventListener('click' , () => {
+})
+
+//video 
+
+const videoplayers = document.querySelectorAll('.video-play-button')
+videoplayers.forEach(videoplayer => videoplayer.addEventListener('click', () => {
+        
+        const video = videoplayer.previousElementSibling;
+        if (video.paused || video.ended) {
+            video.play();
+            videoplayer.style.opacity = 0
+            video.muted = false
+          } else {
+            video.pause();
+            videoplayer.style.opacity = .5
+          }
+        const videos = document.querySelectorAll('.works-video-item');
+        videos.forEach(v => {if(v !== video) {
+            v.pause()
+            
+        }})
+        const videoPlayers = document.querySelectorAll('.video-play-button');
+        videoPlayers.forEach(vp => {if(vp !== videoplayer) {
+            vp.style.opacity = .5
+        }})
+    })
+)
