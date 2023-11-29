@@ -105,13 +105,12 @@ workImages.forEach((image, i) => {
 //instagram posts
 
 document.getElementById('prevWork').addEventListener('click' , () => {
-    const activeCard = document.querySelector('.active-card');
-    const prevCard = activeCard.previousElementSibling;
-    const nextCard = activeCard.nextElementSibling;
-    activeCard.classList.add('disable')
-    nextCard.classList.add('disable')
+    const cardsContainer = document.querySelector('.instagram__cards')
+    cardsContainer.scrollLeft -= 500
 })
 document.getElementById('nextWork').addEventListener('click' , () => {
+    const cardsContainer = document.querySelector('.instagram__cards')
+    cardsContainer.scrollLeft += 500
 })
 
 //video 
