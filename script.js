@@ -70,6 +70,21 @@ const toggleBurger = () => {
 document.querySelectorAll('.request').forEach(element => {
   element.addEventListener('click', e => {
     e.preventDefault();
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11337131436/CLt2CNHh3-EYEKzL-50q',
+          'event_callback': callback
+      });
+      return false;
+    }
+
+    console.log('123123')
+
     document.querySelector('.modal').classList.toggle('open');
     document.querySelector('body').classList.toggle('block');
   })
