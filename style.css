@@ -101,10 +101,16 @@ select {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  font-size: 36px;
-  font-weight: 900;
+  font-size: 32px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.h1-bannner__description {
+  font-size: 28px;
+  font-weight: 600;
+  color: #F54A4A;
 }
  
 @media (max-width: 768px) {
