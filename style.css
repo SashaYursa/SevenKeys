@@ -91,6 +91,28 @@ select {
     gap: 20px;
 }
 
+.h1-banner {
+  background: #3a2e2a;
+  padding: 25px 0; 
+  text-align: center;
+}
+
+.h1-banner__title {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ 
+@media (max-width: 768px) {
+  .h1-banner__title {
+    font-size: 26px;
+  }
+}
+
 .pre-header__phones{
     display: flex;
     flex-direction: column;
