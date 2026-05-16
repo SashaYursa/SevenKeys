@@ -30,3 +30,13 @@ if (burger && nav) {
     })
   })
 }
+
+document.addEventListener('click', (e) => {
+  const phoneLink = e.target.closest('a[href^="tel:"]')
+  if (!phoneLink) return
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      send_to: 'AW-11337131436/OIK4CImVlK4cEKzL-50q',
+    })
+  }
+})
